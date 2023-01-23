@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: DejaVuSerif;
+    src: url('./DejaVuSerifCondensed-Bold.ttf') format('opentype');
+}
+body{
+    background-color: #009c3b;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./Faixa.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'DejaVuSerif';
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+li:hover {
+    color: #ffdf00
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#title-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+h1 {
+    font-family: DejaVuSerif;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+.contact-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-family: DejaVuSerif;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.redesocial {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+p {
+    margin-left: 15px;
+    font-family: DejaVuSerif;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+.logosocial {
+    width: 50px;
+    height: 50px;
+}
+label {
+    font-family: DejaVuSerif;
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 
+        -1px -1px 0px #002776, 
+        -1px 1px 0px #002776,                    
+        1px -1px 0px #002776,                  
+        1px 0px 0px #002776;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.caixa {
+    width: 100%;
+    height: 25px;
+    font-family: DejaVuSerif;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#mensagem {
+    height: 80px;
+}
+.CheckBox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+input.CheckBox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+button:hover {
+    color: red;
+    background-color: #fff;
+}
+footer {
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+span {
+    color: #fff;
+    font-family: DejaVuSerif;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 1024px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .contact-container {
+        height: 900px;
+    }
+    .content {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .social-container {
+        width: 90%;
+        align-items: center;
+    }
+    .form-container {
+        width: 90%;
+        align-items: center;
+    }
+}
